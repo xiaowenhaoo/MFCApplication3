@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "CMyServerSocket.h"
 
 
 // CMFCApplication3Dlg 对话框
@@ -33,4 +34,8 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedButton1();
+	void OnListen();
+
+	CEdit edit1;
+	CMyServerSocket m_srvrSocket;
 };
